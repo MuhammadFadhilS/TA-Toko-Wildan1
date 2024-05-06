@@ -20,4 +20,7 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 }); // ->middleware('isBeranda');
-    
+
+Route::get('/berandaadmin', function () {
+    return view('Admin.beranda');
+});
