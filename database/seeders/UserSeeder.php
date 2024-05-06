@@ -23,5 +23,25 @@ class UserSeeder extends Seeder
             'alamat' => 'Jl. Soetoyo S Pal 7',
             'gender' => 'L'
         ]);
+
+        User::create([
+            'name' => 'Owner',
+            'username' => 'owner@owner.com',
+            'email_verified_at' => now(),
+            'password' => bcrypt('owner'),
+            'notelp' => '085753724244',
+            'alamat' => 'Jl. Soetoyo S Pal 8',
+            'gender' => 'L'
+        ]);
+
+        User::create([
+            'name' => 'Kurir',
+            'username' => 'kurir@kurir.com',
+            'email_verified_at' => now(),
+            'password' => bcrypt('kurir'),
+            'notelp' => '085753724245',
+            'alamat' => 'Jl. Soetoyo S Pal 9',
+            'gender' => 'P'
+        ]);
     }
 }
