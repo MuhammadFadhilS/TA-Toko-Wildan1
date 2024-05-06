@@ -13,7 +13,7 @@ class CreatePengirimenTable extends Migration
      */
     public function up()
     {
-        Schema::create('pengirimen', function (Blueprint $table) {
+        Schema::create('pengiriman', function (Blueprint $table) {
             $table->id();
             $table->string('biaya');
             $table->string('alamat');
